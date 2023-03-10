@@ -29,7 +29,10 @@ $(function ($) {
 
     /* Magnific Popup Activation Probucket */
     $(".youtube-video").magnificPopup({
-      type: "video",
+      items: [{
+        src: 'https://www.youtube.com/watch?v=4DCTTrGjGU4',
+        type: 'iframe' // this overrides default type
+      }],
     });
 
     /* Wow js */
