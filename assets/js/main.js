@@ -60,11 +60,14 @@ $(function ($) {
     $(document).on("click", "#submit-step-1", function () {
       console.log("clicked submit step 1")
 
-      const step1 = document.querySelector('#step-1').style
-      step1.display = "none"
+      const comingSoon = document.querySelector('#coming-soon').style
+      comingSoon.display = "block"
 
-      const step2 = document.querySelector('#step-2').style
-      step2.display = "block"
+      // const step1 = document.querySelector('#step-1').style
+      // step1.display = "none"
+
+      // const step2 = document.querySelector('#step-2').style
+      // step2.display = "block"
     });
 
     $(document).on("click", "#goto-step-1", function () {
@@ -115,9 +118,9 @@ $(function ($) {
     /* update logo on resize */
     $(window).resize(function () {/*from  w  w w . ja va 2  s.  c  om*/
       if ($(this).width() <= 990) {
-        $("#logo").attr('src', "assets/img/zk3-resize.png");
+        $("#logo").attr('src', "assets/img/white-logo.png");
       } else {
-        $("#logo").attr('src', "assets/img/zk4-resize.png");
+        $("#logo").attr('src', "assets/img/colored-logo.png");
       }
     });
 
@@ -127,10 +130,10 @@ $(function ($) {
       var $window = $(window);
       if ($window.scrollTop() > 0) {
         $(".mein-menu").addClass("nav-fixed");
-        $("#logo").attr('src', "assets/img/zk3-resize.png");
+        $("#logo").attr('src', "assets/img/white-logo.png");
       } else {
         $(".mein-menu").removeClass("nav-fixed");
-        $("#logo").attr('src', "assets/img/zk4-resize.png");
+        $("#logo").attr('src', "assets/img/colored-logo.png");
       }
 
 
