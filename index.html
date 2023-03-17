@@ -43,7 +43,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png" class="logo" alt="logo">
+                    <!-- <img src="assets/img/logo.png" class="logo" alt="logo"> -->
+                    <img id="logo" src="assets/img/zk4-resize.png" class="logo" alt="logo">
+                    <!-- <img src="assets/img/zk3-resize.png" class="logo" alt="logo"> -->
                     <!-- <img src="assets/img/z-l-removebg-preview.png" class="logo" alt="logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -67,7 +69,7 @@
                             <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link button-1" href="#">Summon Genie</a>
+                            <a class="nav-link button-1" href="#">&nbspGet Early Access&nbsp </a>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +80,7 @@
 
     <!-- Banners Start -->
     <div class="banner" id="transfer" style="background-image: url('./assets/img/banner-bg.png')">
-        <div class="man">
+        <!-- <div class="man">
             <img src="./assets/img/coin/1.png" alt="" class="coin-1">
             <img src="./assets/img/coin/2.png" alt="" class="coin-2">
             <img src="./assets/img/coin/3.png" alt="" class="coin-3">
@@ -88,7 +90,7 @@
             <img src="./assets/img/coin/7.png" alt="" class="coin-7">
             <img src="./assets/img/coin/8.png" alt="" class="coin-8">
             <img class="bg-sape-1" src="./assets/img/banner-bg-2.png" alt="">
-        </div>
+        </div> -->
 
         <div class="hero-area">
             <div class="container">
@@ -118,16 +120,160 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
-                        <div class="right-box" style="opacity: 0.7;
-                        height:500px;
-                        background-image: url(file:///C:/Users/92336/Documents/Projects/themeforest-c5unx4Rk-gooland-bitcoin-investment-html-template/gooland/gooland-HTML/Zak/assets/img/coming-soon.jpg);
-                        background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-                        ">
+                    <div class="col-xl-4 col-lg-6 wow fadeInRight" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                        <div class="right-box">
+                            <div class="exchange">
+                                <!-- Step 1 -->
+                                <div id="step-1">
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">You have</p>
+                                            <div class="coin">
+                                                <img src="./assets/img/tether-usd.png" alt="">
+                                                <div class="language-select">
+                                                    <select class="select-bar">
+                                                        <option value="">USDT</option>
+                                                        <option value="">USDC</option>
+                                                        <option value="">DAI</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form action="#" id="faq-form">
+                                            <div class="form-group">
+                                                <input type="text" name="number" placeholder="1000"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <span class="rate">1 BTC = 11724.597423 USD</span>
+                                    </div>
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">You get</p>
+                                            <div class="coin">
+                                                <img src="./assets/img/usd.png" alt="">
+                                                <div class="language-select">
+                                                    <select class="select-bar">
+                                                        <option value="">USD</option>
+                                                        <option value="">EURO</option>
+                                                        <option value="">GBP</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form action="#" id="faq-form-2">
+                                            <div class="form-group">
+                                                <input type="text" name="number" placeholder="11724597.42"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <span class="rate">1 USD = 0.00008544 BTC</span>
+                                    </div>
+                                    <div id="submit-step-1" class="button-box">
+                                        <!-- <a class="rotate" href="#"><img src="./assets/img/exchange-img.png" alt=""></a> -->
+
+                                        <a href="#" class="button button-1">Sell Now</a>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div id="step-2">
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">Email</p>
+                                        </div>
+                                        <form action="#" id="faq-form-2">
+                                            <div class="form-group">
+                                                <input type="text" name="text" placeholder="alex@gmail.com"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <!-- <span class="rate">1 USD = 0.00008544 BTC</span> -->
+                                    </div>
+
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">Country</p>
+                                        </div>
+                                        <form action="#" id="faq-form-2">
+                                            <div class="form-group">
+                                                <input type="text" name="number" placeholder="Finland"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <!-- <span class="rate">1 USD = 0.00008544 BTC</span> -->
+                                    </div>
+                                    <div class="button-box">
+                                        <!-- <a class="rotate" href="#"><img src="./assets/img/exchange-img.png" alt=""></a> -->
+
+                                        <a id="goto-step-1" href="#" class="button button-1">Go Back</a>
+                                        <a id="submit-step-2" href="#" class="button button-1">Proceed</a>
+
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 -->
+                                <div id="step-3">
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">Enter Bank</p>
+                                        </div>
+                                        <form action="#" id="faq-form-2">
+                                            <div class="form-group">
+                                                <input type="text" name="text" placeholder="Nordea"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <!-- <span class="rate">1 USD = 0.00008544 BTC</span> -->
+                                    </div>
+
+                                    <div class="exchange-box">
+                                        <div class="selector">
+                                            <p class="text">Account Number</p>
+                                        </div>
+                                        <form action="#" id="faq-form-2">
+                                            <div class="form-group">
+                                                <input type="number" name="account_number" placeholder="428157231234"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                        <!-- <span class="rate">1 USD = 0.00008544 BTC</span> -->
+                                    </div>
+                                    <div class="button-box">
+                                        <!-- <a class="rotate" href="#"><img src="./assets/img/exchange-img.png" alt=""></a> -->
+
+                                        <a id="#goto-step-2" href="#" class="button button-1">Go Back</a>
+                                        <a id="submit-step-3" href="#" class="button button-1">Proceed</a>
+
+                                    </div>
+                                </div>
+
+                                <!-- Step 4 -->
+                                <!-- <div id="step-4">
+                                    <div class="button-box">
+
+                                        <a id="#goto-step-3" href="#" class="button button-1">Go Back</a>
+                                        <a id="submit-step-4" href="#" class="button button-1">Connect Wallet</a>
+
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- <div class="review">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#">Based on 10.000+reviews!</a>
+                            </div> -->
                         </div>
-                        <!-- <div class="right-box">
+                    </div>
+
+
+                    <!-- Original widget of the theme -->
+                    <!-- <div class="right-box">
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -303,10 +449,20 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
+                    <!-- Widget Coming soon-->
+                    <!-- <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="right-box" style="opacity: 0.7;
+                            height:500px;
+                            background-image: url(file:///C:/Users/92336/Documents/Projects/themeforest-c5unx4Rk-gooland-bitcoin-investment-html-template/gooland/gooland-HTML/Zak/assets/img/coming-soon.jpg);
+                            background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+                            ">
+                            </div> -->
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Effortless Start -->
@@ -561,7 +717,7 @@
                                 <h4 class="lasthead">Policy</h4>
                                 <ul class="footer-link">
                                     <li><a target="_blank" href="./terms-and-condition.html">Terms of use</a></li>
-                                    <li><a target="_blank" href="./terms-and-condition.html">Privacy Policy</a></li>
+                                    <li><a target="_blank" href="./privacy-policy.html">Privacy Policy</a></li>
                                     <!-- <li><a target="_blank" href="./terms-and-condition.html">Refund Policy</a></li> -->
                                 </ul>
                             </div>

@@ -47,15 +47,92 @@ $(function ($) {
       );
     });
 
+    // initialize swiper when document ready
+    const step1 = document.querySelector('#step-1')
+    const step2 = document.querySelector('#step-2')
+    const step3 = document.querySelector('#step-3')
+    console.log("step1", step1)
+    step1.style.display = "block"
+    step2.style.display = "none"
+    step3.style.display = "none"
+
+    /*Stepper flow-*/
+    $(document).on("click", "#submit-step-1", function () {
+      console.log("clicked submit step 1")
+
+      const step1 = document.querySelector('#step-1').style
+      step1.display = "none"
+
+      const step2 = document.querySelector('#step-2').style
+      step2.display = "block"
+    });
+
+    $(document).on("click", "#goto-step-1", function () {
+      console.log("clicked goto step 1")
+
+      const step1 = document.querySelector('#step-1').style
+      step1.display = "block"
+
+      const step2 = document.querySelector('#step-2').style
+      step2.display = "none"
+
+    });
+
+    $(document).on("click", "#submit-step-2", function () {
+      console.log("clicked submit step 2")
+
+      const step2 = document.querySelector('#step-2').style
+      step2.display = "none"
+
+      const step3 = document.querySelector('#step-3').style
+      step3.display = "block"
+
+    });
+
+    $(document).on("click", "#goto-step-2", function () {
+      console.log("clicked goto step 2")
+
+      const step2 = document.querySelector('#step-2').style
+      step2.display = "block"
+
+      const step3 = document.querySelector('#step-3').style
+      step3.display = "none"
+
+    });
+
+    $(document).on("click", "#submit-step-3", function () {
+      console.log("clicked goto step 2")
+
+      const step4 = document.querySelector('#step-4').style
+      step4.display = "block"
+
+      const step3 = document.querySelector('#step-3').style
+      step3.display = "none"
+
+    });
+
+
+    /* update logo on resize */
+    $(window).resize(function () {/*from  w  w w . ja va 2  s.  c  om*/
+      if ($(this).width() <= 990) {
+        $("#logo").attr('src', "assets/img/zk3-resize.png");
+      } else {
+        $("#logo").attr('src', "assets/img/zk4-resize.png");
+      }
+    });
+
     /* sticky navigation menu */
     var lastScrollTop = "";
     $(window).on("scroll", function () {
       var $window = $(window);
       if ($window.scrollTop() > 0) {
         $(".mein-menu").addClass("nav-fixed");
+        $("#logo").attr('src', "assets/img/zk3-resize.png");
       } else {
         $(".mein-menu").removeClass("nav-fixed");
+        $("#logo").attr('src', "assets/img/zk4-resize.png");
       }
+
 
       /*---------------------------
          back to top show / hide

@@ -851,7 +851,7 @@ p.text {
   border-radius: 20px;
   -webkit-box-shadow: -1.361px 25.964px 40px 0px rgba(104, 67, 255, 0.2);
   box-shadow: -1.361px 25.964px 40px 0px rgba(104, 67, 255, 0.2);
-  padding: 30px 20px 20px 20px;
+  /* padding: 30px 20px 20px 20px; */
 }
 
 .banner .hero-area .right-box .nav {
@@ -888,7 +888,180 @@ p.text {
   box-shadow: 0px 13px 24px 0px rgba(252, 119, 178, 0.51);
 }
 
-.banner .hero-area .right-box .tab-content .exchange .exchange-box {
+.banner .hero-area .right-box .exchange {
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: -1.361px 25.964px 40px 0px rgba(104, 67, 255, 0.2);
+  box-shadow: -1.361px 25.964px 40px 0px rgba(104, 67, 255, 0.2);
+  padding: 10px 20px 20px 20px;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box {
+  margin-top: 10px;
+  padding: 20px 20px 20px;
+  border-radius: 20px;
+  background-color: rgba(201, 205, 255, 0.2);
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector p.text {
+  font-size: 18px;
+  color: #6342ff;
+  line-height: 1.556;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin img {
+  margin-right: 5px;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin .language-select .nice-select {
+  border: 0;
+  width: 85px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #777777;
+  height: auto;
+  padding: 3px 0px 0px;
+  background: transparent;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin .language-select .nice-select:after {
+  border-bottom: 2px solid #777777;
+  border-right: 2px solid #777777;
+  width: 14px;
+  height: 14px;
+  top: 40%;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin .language-select .nice-select .list {
+  width: 100px;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin .language-select .nice-select .list li {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #777777;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .selector .coin span.current {
+  color: #777777;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #beaeff;
+  background-color: white;
+  background-color: #dfe1fe;
+  border-radius: 30px;
+  padding: 10px 20px 10px;
+  font-size: 24px;
+  color: #4938a2;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #4938a2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input::-moz-placeholder {
+  font-size: 24px;
+  color: #4938a2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input:-ms-input-placeholder {
+  font-size: 24px;
+  color: #4938a2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input::-ms-input-placeholder {
+  font-size: 24px;
+  color: #4938a2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box .form-group input::placeholder {
+  font-size: 24px;
+  color: #4938a2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner .hero-area .right-box .exchange .exchange-box span {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-size: 16px;
+  color: #4938a2;
+  text-transform: uppercase;
+  line-height: 1.75;
+  padding-top: 6px;
+}
+
+.banner .hero-area .right-box .exchange .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.banner .hero-area .right-box .exchange .button-box a.rotate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.banner .hero-area .right-box .exchange .button-box a.button.button-1 {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 13px 0px rgba(153, 99, 255, 0.59);
+  box-shadow: 0px 7px 13px 0px rgba(153, 99, 255, 0.59);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* theme original widget*/
+/* .banner .hero-area .right-box .tab-content .exchange .exchange-box {
   margin-top: 10px;
   padding: 0px 20px 20px;
   border-radius: 20px;
@@ -1037,7 +1210,7 @@ p.text {
   font-weight: 600;
   line-height: normal;
   width: 100%;
-}
+} */
 
 /* upper-content Start */
 .section-head {
