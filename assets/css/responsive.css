@@ -291,17 +291,6 @@
   		padding-bottom: 30px;
   	}
 
-
-  	.banner .hero-area .right-box .nav {
-  		-webkit-box-pack: center;
-  		-ms-flex-pack: center;
-  		justify-content: center;
-  	}
-
-  	.banner .hero-area .right-box .nav li.nav-item:first-child {
-  		margin-right: 30px;
-  	}
-
   	.footer .footer-bottom .social-style {
   		margin-bottom: 22px;
   	}
@@ -411,17 +400,6 @@
   	h2.title {
   		font-size: 35px;
   		line-height: 45px;
-  	}
-
-  	.banner .hero-area .right-box .nav {
-  		-webkit-box-orient: vertical;
-  		-webkit-box-direction: normal;
-  		-ms-flex-direction: column;
-  		flex-direction: column;
-  	}
-
-  	.banner .hero-area .right-box .nav li.nav-item:first-child {
-  		margin: 0px 0px 30px 0px;
   	}
 
   }
